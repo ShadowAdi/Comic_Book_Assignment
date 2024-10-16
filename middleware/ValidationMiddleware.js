@@ -7,7 +7,7 @@ const validateComicInput = [
     body('price').isFloat({ min: 0 }).withMessage('Price must be a valid number'),
     body('numberOfPages').isInt({ min: 1 }).withMessage('Number of pages must be an integer greater than 0'),
     body('condition').isIn(['new', 'used']).withMessage('Condition must be either "new" or "used"'),
-    
+
     (req, res, next) => {
         const errors = validationResult(req);
         if (!errors.isEmpty()) {
