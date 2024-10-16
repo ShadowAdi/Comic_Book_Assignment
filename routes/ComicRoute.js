@@ -11,7 +11,7 @@ router.post("/addComic",validateComicInput,CreateComic)
 router.get("/getComic/:id",GetComic)
 router.get("/getAllComics",GetAllComics)
 router.delete("/deleteComic/:id",DeleteComic)
-router.put("/updateComic/:id",validateComicInput,UpdateComic)
+router.put("/updateComic/:id",UpdateComic)
 
 
 module.exports=router
