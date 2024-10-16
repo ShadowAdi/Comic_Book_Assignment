@@ -1,6 +1,5 @@
 const { body, validationResult } = require('express-validator');
 
-// Middleware for validating inputs for creating or updating comics
 const validateComicInput = [
     body('bookName').notEmpty().withMessage('Book name is required'),
     body('authorName').notEmpty().withMessage('Author name is required'),
