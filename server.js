@@ -1,6 +1,8 @@
 const express = require("express");
 const cors = require("cors");
 const router = require("./routes/ComicRoute");
+require('dotenv').config();
+
 const Connect = require("./config/db");
 const errorHandler = require("./middleware/ErrorHandler"); // Import error handler
 
