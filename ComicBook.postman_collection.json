@@ -1,0 +1,170 @@
+{
+	"info": {
+		"_postman_id": "77852dce-2a40-4b98-85d0-7d2baf63d082",
+		"name": "ComicBook",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "29633687",
+		"_collection_link": "https://www.postman.com/flight-geoscientist-23558502/comicbookcollection/collection/5zbmg2z/comicbook?action=share&source=collection_link&creator=29633687"
+	},
+	"item": [
+		{
+			"name": "CreateComicBook",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"bookName\": \"Maus\",\r\n  \"description\": \"A Pulitzer Prize-winning graphic novel that depicts the Holocaust through the lens of anthropomorphic animals.\",\r\n  \"authorName\": \"Art Spiegelman\",\r\n  \"yearOfPublication\": 1986,\r\n  \"price\": 22.99,\r\n  \"discount\": 0,\r\n  \"numberOfPages\": 296,\r\n  \"condition\": \"new\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/v1/addComic",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"v1",
+						"addComic"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetAllComics",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"bookName\": \"Maus\",\r\n  \"description\": \"A Pulitzer Prize-winning graphic novel that depicts the Holocaust through the lens of anthropomorphic animals.\",\r\n  \"authorName\": \"Art Spiegelman\",\r\n  \"yearOfPublication\": 1986,\r\n  \"price\": 22.99,\r\n  \"discount\": 0,\r\n  \"numberOfPages\": 296,\r\n  \"condition\": \"new\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/v1/getAllComics",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"v1",
+						"getAllComics"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetComic",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"bookName\": \"Maus\",\r\n  \"description\": \"A Pulitzer Prize-winning graphic novel that depicts the Holocaust through the lens of anthropomorphic animals.\",\r\n  \"authorName\": \"Art Spiegelman\",\r\n  \"yearOfPublication\": 1986,\r\n  \"price\": 22.99,\r\n  \"discount\": 0,\r\n  \"numberOfPages\": 296,\r\n  \"condition\": \"new\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/v1/getComic/670feb84acafe4b825e84013",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"v1",
+						"getComic",
+						"670feb84acafe4b825e84013"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteComic",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/v1/deleteComic/670feb84acafe4b825e84013",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"v1",
+						"deleteComic",
+						"670feb84acafe4b825e84013"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateComic",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"authorName\": \"Ambani\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/v1/updateComic/670feb84acafe4b825e84013",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"v1",
+						"updateComic",
+						"670feb84acafe4b825e84013"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
